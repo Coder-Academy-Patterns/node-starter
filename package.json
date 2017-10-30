@@ -1,0 +1,15 @@
+{
+  "name": "node-zoo-cli",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "dev": "nodemon ./src",
+    "start": "node ./src"
+  },
+  "dependencies": {
+  },
+  "devDependencies": {
+    "nodemon": "^1.12.1"
+  }
+}
