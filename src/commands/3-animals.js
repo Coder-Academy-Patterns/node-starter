@@ -1,7 +1,8 @@
-const { menu, clear, puts, waitThenCall } = require('./utils')
-const Animal = require('./models/animal')
+const { menu, clear, puts, waitThenCall } = require('../utils')
+const Animal = require('../models/animal')
 
 function displayAll() {
+  // Animal.all.each_with_index do |animal, index|
   Animal.all().forEach((animal, index) => {
     puts(`${index+1}. ${animal.name}`)
   })

@@ -9,6 +9,10 @@ function menu(choices, callback) {
   rl.question(choices.join('\n') + '\n> ', callback)
 }
 
+function ask(question, callback) {
+  rl.question(question + '\n> ', callback)
+}
+
 function clear() {
   rl.write('\033c')
   rl.write('\n')
@@ -22,4 +26,4 @@ function waitThenCall(f, delaySeconds = 1) {
   setTimeout(f, delaySeconds * 1000)
 }
 
-module.exports = { menu, clear, puts, waitThenCall }
+module.exports = { menu, ask, clear, puts, waitThenCall }
