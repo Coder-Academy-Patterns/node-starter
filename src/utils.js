@@ -26,4 +26,8 @@ function waitThenCall(f, delaySeconds = 1) {
   setTimeout(f, delaySeconds * 1000)
 }
 
-module.exports = { menu, ask, clear, puts, waitThenCall }
+function confirmThenCall(f) {
+  rl.question('Press enter to continue…', f)
+}
+
+module.exports = { menu, ask, clear, puts, waitThenCall, confirmThenCall }

@@ -1,4 +1,4 @@
-const { ask, clear, puts, waitThenCall } = require('../utils')
+const { ask, clear, puts, confirmThenCall } = require('../utils')
 const github = require('../models/github')
 
 function mainMenu() {
@@ -14,13 +14,13 @@ function mainMenu() {
         })
 
         // Show menu again
-        waitThenCall(mainMenu, 10)
+        confirmThenCall(mainMenu)
       })
       .catch(error => {
         console.error(error)
 
         // Show menu again
-        waitThenCall(mainMenu, 10)
+        confirmThenCall(mainMenu)
       })
   })
 }
