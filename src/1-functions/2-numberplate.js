@@ -13,6 +13,7 @@ console.log(`Number plate: ${ formatVanityPlate(two) }`)
 
 /*
 
+Challenges:
 1. Replace 'for' with '4'
 2. Replace 'to' with '2'
 3. Restrict to maximum of 12 characters
