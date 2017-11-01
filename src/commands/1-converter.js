@@ -21,6 +21,7 @@ mainMenu()
 
 /*
 
+Challenges:
 1. Extend with main menu that asks for either Celsius of Fahrenheit
 
 */
