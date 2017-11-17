@@ -1,0 +1,12 @@
+# Raw Markdown readme for facebook/react
+
+GET https://api.github.com/repos/facebook/react/readme
+Accept: application/vnd.github.v3.raw
+
+
+###
+# HTML readme for facebook/react
+
+GET https://api.github.com/repos/facebook/react/readme
+Accept: application/vnd.github.v3.html
+
