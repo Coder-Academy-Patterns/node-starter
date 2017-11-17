@@ -1,4 +1,4 @@
-const github = require('../models/github')
+const github = require('../api/github')
 
 github.reposBy('facebook')
   .then(res => {
