@@ -1,3 +1,13 @@
+# Load page 1 of all repos belonging to facebook
+GET https://api.github.com/users/facebook/repos
+###
+
+
+# Load info for facebook/react
+GET https://api.github.com/repos/facebook/react
+###
+
+
 # Raw Markdown readme for facebook/react
 
 GET https://api.github.com/repos/facebook/react/readme
